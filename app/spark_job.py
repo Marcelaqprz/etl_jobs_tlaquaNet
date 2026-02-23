@@ -32,12 +32,12 @@ def main() -> None:
 
     # write data to snowflake
     sfOptions = {
-        "sfURL" : f"{os.get("SNOWFLAKE_ACCOUNT")}.snowflakecomputing.com",
-        "sfUSER" : os.getenv("SNOWFLAKE_USER"),
-        "sfPassword" : os.getenv("SNOWFLAKE_PASSWORD"),
-        "sfDatabase" : os.getenv("SNOWFLAKE_DATABASE"),
-        "sfSchema" : os.getenv("SNOWFLAKE_SCHEMA"),
-        "sfWerehouse" : os.getenv("SNOWFLAKE_WEREHOUSE"),
+        "sfURL": f"{os.getenv('SNOWFLAKE_ACCOUNT')}.snowflakecomputing.com",
+        "sfUser": os.getenv("SNOWFLAKE_USER"),
+        "sfPassword": os.getenv("SNOWFLAKE_PASSWORD"),
+        "sfDatabase": os.getenv("SNOWFLAKE_DATABASE"),
+        "sfSchema": os.getenv("SNOWFLAKE_SCHEMA"),
+        "sfWarehouse": os.getenv("SNOWFLAKE_WAREHOUSE")
     }
 
     (
